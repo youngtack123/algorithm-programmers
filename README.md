@@ -1,1 +1,9 @@
-# 프로그래머스 알고리즘 스터디
+# Programmers Algorithm Study w/ JavaScript
+
+## We use `gitmoji` :)
+
+> npm i -g gitmoji-cli
+
+# or
+
+> brew install gitmoji

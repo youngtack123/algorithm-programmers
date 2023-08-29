@@ -37,24 +37,3 @@
 입출력 예 #3
 
 - p의 길이가 2이므로 t의 부분문자열은 "10", "02", "20", "03"이며, 이중 15보다 작거나 같은 숫자는 "10", "02", "03" 이렇게 3개입니다. "02"와 "03"은 각각 2, 3에 해당한다는 점에 주의하세요
-
-<hr />
-
-## 풀이
-
-```javascript
-/*
-- 반복문을 활용한 풀이
-- t배열에서 p의 길이만큼 만들 수 있는 문자열을 자르고, p보다 작거나 같은지 검증.
-*/
-function solution(t, p) {
-  let answer = 0;
-
-  for (let i = 0; i <= t.length - p.length; i++) {
-    let tmp = t.substr(i, p.length);
-
-    if (tmp <= p) answer++;
-  }
-  return answer;
-}
-```
